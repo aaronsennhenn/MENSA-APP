@@ -16,7 +16,8 @@ plotly
 authlib
 flask_sqlalchemy
 deep_translator
-openai
+#openai
 nltk
 numpy
 scikit-learn
+google-genai

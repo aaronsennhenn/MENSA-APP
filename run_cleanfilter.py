@@ -12,12 +12,11 @@ Execution:
 This script is intended to be run as a cronjob every day at 3:30 AM.
 """
 
-
 from db.db_read import setup_database_connection
 from secret import USER, PASSWORD, HOST, PORT
 import pandas as pd
 import numpy as np
-from scraper.gpt_prompts import classify_missing_filters,embedding_extraction,generate_description,classify_dish_taste,generate_recipe,ingredient_extraction
+from scraper.gemini_prompts import classify_missing_filters,embedding_extraction,generate_description,classify_dish_taste,generate_recipe,ingredient_extraction
 from db.db_read import load_dishes_table_for_filter_cleaning, get_combined_dishes
 from db.utils import correct_icons,impute_missing_prices
 from db.db_write import write_to_filters_clean,write_to_course,write_to_embedding, write_to_description, write_to_taste, write_to_recipe, write_to_ingredient,write_to_dishes_eng,write_imputed_price_to_filtersclean
