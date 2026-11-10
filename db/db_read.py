@@ -808,8 +808,9 @@ cluster_translation_dict = {
     'Thai': 'Thailändisch',
     'Bavarian': 'Bayerisch',
     'Other': 'Andere',
-    'Swabian': 'Schwäbisch'
-    }
+    'Swabian': 'Schwäbisch',
+    'Eastern European': 'Osteuropäisch',
+}
 
 def get_cluster_similarity(db_session: Session, user_name: str, lang: str) -> pd.DataFrame:
     """
